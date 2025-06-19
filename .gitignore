@@ -1,1 +1,6 @@
+.vscode/
 **/ignore
+/**/*.js
+/**/*.css
+!/**/*.min.js
+!/**/*.min.css
