@@ -11,4 +11,3 @@
 ## About
 联系方式：
 - Github: [ryder-fan](https://github.com/ryder-fan)
-- WeChat: ryder-fan
