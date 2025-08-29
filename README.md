@@ -8,6 +8,8 @@
 
 [Joker-Chess](https://ryder-fan.github.io/joker-chess/)
 
+[2048](https://ryder-fan.github.io/2048/)
+
 ## Tools
 
 ## About
