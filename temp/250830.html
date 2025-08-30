@@ -32,6 +32,19 @@
             const distanceX = endX - startX;
             const distanceY = endY - startY;
             log(`touchend, distanceX: ${distanceX}, distanceY: ${distanceY}`);
+        });
+
+        window.addEventListener('mousedown', (event) => {
+            startX = event.clientX;
+            startY = event.clientY;
+            log(`mousedown`);
+        });
+        window.addEventListener('mouseup', (event) => {
+            const endX = event.clientX;
+            const endY = event.clientY;
+            const distanceX = endX - startX;
+            const distanceY = endY - startY;
+            log(`mouseup, distanceX: ${distanceX}, distanceY: ${distanceY}`);
         })
     </script>
 </body>
