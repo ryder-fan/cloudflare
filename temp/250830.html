@@ -45,7 +45,11 @@
             const distanceX = endX - startX;
             const distanceY = endY - startY;
             log(`mouseup, distanceX: ${distanceX}, distanceY: ${distanceY}`);
-        })
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            log('DOMContentLoaded, touch and mouse events are enabled');
+        });
     </script>
 </body>
 
