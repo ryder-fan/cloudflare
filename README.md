@@ -17,3 +17,5 @@
 联系方式：
 
 -   Github: [ryder-fan](https://github.com/ryder-fan)
+
+-   Weixin ID: Ryder-fan
