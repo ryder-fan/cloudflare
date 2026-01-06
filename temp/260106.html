@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+</head>
+
+<body>
+    <input id="input">
+    <button onclick="calc()">confirm</button>
+    <p id="res">result</p>
+
+    <script>
+        function calc() {
+            let input = document.getElementById("input").value;
+            let offset = Number(eval(input)) + 10800 * 6 + 6 * 360 + 72;
+
+            let res_num = {
+                '元': Math.floor(offset / 129600),
+                '会': Math.floor((offset % 129600) / 10800),
+                '运': Math.floor((offset % 10800) / 360),
+                '世': Math.floor((offset % 360) / 30),
+                '年': Math.floor((offset % 30) / 1),
+            }
+
+            let res = {
+                '元': '',
+                '会': '',
+                '运': '',
+                '世': '',
+                '年': '',
+            }
+
+            switch (res_num['元']) {
+                case 0:
+                    res['元'] = '甲';
+                    break;
+                case 1:
+                    res['元'] = '乙';
+                    break;
+                case 2:
+                    res['元'] = '丙';
+                    break;
+                case 3:
+                    res['元'] = '丁';
+                    break;
+                case 4:
+                    res['元'] = '戊';
+                    break;
+                case 5:
+                    res['元'] = '己';
+                    break;
+                case 6:
+                    res['元'] = '庚';
+                    break;
+                case 7:
+                    res['元'] = '辛';
+                    break;
+                case 8:
+                    res['元'] = '壬';
+                    break;
+                case 9:
+                    res['元'] = '癸';
+                    break;
+            }
+
+            switch (res_num['会']) {
+                case 0:
+                    res['会'] = '子';
+                    break;
+                case 1:
+                    res['会'] = '丑';
+                    break;
+                case 2:
+                    res['会'] = '寅';
+                    break;
+                case 3:
+                    res['会'] = '卯';
+                    break;
+                case 4:
+                    res['会'] = '辰';
+                    break;
+                case 5:
+                    res['会'] = '巳';
+                    break;
+                case 6:
+                    res['会'] = '午';
+                    break;
+                case 7:
+                    res['会'] = '未';
+                    break;
+                case 8:
+                    res['会'] = '申';
+                    break;
+                case 9:
+                    res['会'] = '酉';
+                    break;
+                case 10:
+                    res['会'] = '戌';
+                    break;
+                case 11:
+                    res['会'] = '亥';
+                    break;
+            }
+
+            switch (res_num['运']) {
+                case 0:
+                    res['运'] = '一甲';
+                    break;
+                case 1:
+                    res['运'] = '一乙';
+                    break;
+                case 2:
+                    res['运'] = '一丙';
+                    break;
+                case 3:
+                    res['运'] = '一丁';
+                    break;
+                case 4:
+                    res['运'] = '一戊';
+                    break;
+                case 5:
+                    res['运'] = '一己';
+                    break;
+                case 6:
+                    res['运'] = '一庚';
+                    break;
+                case 7:
+                    res['运'] = '一辛';
+                    break;
+                case 8:
+                    res['运'] = '一壬';
+                    break;
+                case 9:
+                    res['运'] = '一癸';
+                    break;
+                case 10:
+                    res['运'] = '二甲';
+                    break;
+                case 11:
+                    res['运'] = '二乙';
+                    break;
+                case 12:
+                    res['运'] = '二丙';
+                    break;
+                case 13:
+                    res['运'] = '二丁';
+                    break;
+                case 14:
+                    res['运'] = '二戊';
+                    break;
+                case 15:
+                    res['运'] = '二己';
+                    break;
+                case 16:
+                    res['运'] = '二庚';
+                    break;
+                case 17:
+                    res['运'] = '二辛';
+                    break;
+                case 18:
+                    res['运'] = '二壬';
+                    break;
+                case 19:
+                    res['运'] = '二癸';
+                    break;
+                case 20:
+                    res['运'] = '三甲';
+                    break;
+                case 21:
+                    res['运'] = '三乙';
+                    break;
+                case 22:
+                    res['运'] = '三丙';
+                    break;
+                case 23:
+                    res['运'] = '三丁';
+                    break;
+                case 24:
+                    res['运'] = '三戊';
+                    break;
+                case 25:
+                    res['运'] = '三己';
+                    break;
+                case 26:
+                    res['运'] = '三庚';
+                    break;
+                case 27:
+                    res['运'] = '三辛';
+                    break;
+                case 28:
+                    res['运'] = '三壬';
+                    break;
+                case 29:
+                    res['运'] = '三癸';
+                    break;
+            }
+
+            switch (res_num['世']) {
+                case 0:
+                    res['世'] = '子';
+                    break;
+                case 1:
+                    res['世'] = '丑';
+                    break;
+                case 2:
+                    res['世'] = '寅';
+                    break;
+                case 3:
+                    res['世'] = '卯';
+                    break;
+                case 4:
+                    res['世'] = '辰';
+                    break;
+                case 5:
+                    res['世'] = '巳';
+                    break;
+                case 6:
+                    res['世'] = '午';
+                    break;
+                case 7:
+                    res['世'] = '未';
+                    break;
+                case 8:
+                    res['世'] = '申';
+                    break;
+                case 9:
+                    res['世'] = '酉';
+                    break;
+                case 10:
+                    res['世'] = '戌';
+                    break;
+                case 11:
+                    res['世'] = '亥';
+                    break;
+            }
+
+            switch (res_num['年']) {
+                case 0:
+                    res['年'] = '第一';
+                    break;
+                case 1:
+                    res['年'] = '第二';
+                    break;
+                case 2:
+                    res['年'] = '第三';
+                    break;
+                case 3:
+                    res['年'] = '第四';
+                    break;
+                case 4:
+                    res['年'] = '第五';
+                    break;
+                case 5:
+                    res['年'] = '第六';
+                    break;
+                case 6:
+                    res['年'] = '第七';
+                    break;
+                case 7:
+                    res['年'] = '第八';
+                    break;
+                case 8:
+                    res['年'] = '第九';
+                    break;
+                case 9:
+                    res['年'] = '第十';
+                    break;
+                case 10:
+                    res['年'] = '第十一';
+                    break;
+                case 11:
+                    res['年'] = '第十二';
+                    break;
+                case 12:
+                    res['年'] = '第十三';
+                    break;
+                case 13:
+                    res['年'] = '第十四';
+                    break;
+                case 14:
+                    res['年'] = '第十五';
+                    break;
+                case 15:
+                    res['年'] = '第十六';
+                    break;
+                case 16:
+                    res['年'] = '第十七';
+                    break;
+                case 17:
+                    res['年'] = '第十八';
+                    break;
+                case 18:
+                    res['年'] = '第十九';
+                    break;
+                case 19:
+                    res['年'] = '第二十';
+                    break;
+                case 20:
+                    res['年'] = '第二十一';
+                    break;
+                case 21:
+                    res['年'] = '第二十二';
+                    break;
+                case 22:
+                    res['年'] = '第二十三';
+                    break;
+                case 23:
+                    res['年'] = '第二十四';
+                    break;
+                case 24:
+                    res['年'] = '第二十五';
+                    break;
+                case 25:
+                    res['年'] = '第二十六';
+                    break;
+                case 26:
+                    res['年'] = '第二十七';
+                    break;
+                case 27:
+                    res['年'] = '第二十八';
+                    break;
+                case 28:
+                    res['年'] = '第二十九';
+                    break;
+                case 29:
+                    res['年'] = '第三十';
+                    break;
+            }
+
+            res = Object.keys(res).map(key => `${res[key]}${key}`).join(' ');
+            document.getElementById("res").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>
