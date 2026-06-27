@@ -4,14 +4,24 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="data/css/index.min.css">
+    <link rel="stylesheet" href="data/css/mobile.min.css">
     <link rel="icon" href="data/img/ico.png">
-    <script src="data/js/global.min.js"></script>
-    <script src="data/js/mobile.min.js"></script>
+    <script src="../share/js/global.min.js"></script>
     <title>PKU Introduction</title>
 </head>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <style>
+        body {
+            overflow: auto;
+        }
+
+        .card {
+            opacity: 1;
+        }
+    </style>
 
     <script>
         if (window.innerWidth > 768 && window.innerHeight < window.innerWidth)
@@ -29,14 +39,16 @@
         <h1>北京大学简介</h1>
         <img loading="lazy" src="data/img/title.jpg" width="530px" height="315px" alt="北京大学">
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 1 / 16</span>
+    </div>
 
     <div class="container">
         <h2>北大校史</h2>
-        <p class="para" style="width: 95%">
+        <p class="para">
             北京大学创办于1898年，初名京师大学堂，是中国近现代第一所国立综合性大学，于1912年改为现名。北京大学既是中华文脉和教育传统的传承者，也标志着中国现代高等教育的开端。其创办之初也是国家最高教育行政机关，对建立中国现代学制作出重要历史贡献。
         </p>
-        <p class="para" style="width: 95%">
+        <p class="para">
             作为新文化运动的中心和五四运动的策源地，作为中国最早传播马克思主义和民主科学思想的发祥地，作为中国共产党最初的重要活动基地，北京大学为民族振兴和解放、国家建设和发展、社会文明和进步做出了突出贡献，在中国走向现代化的进程中起到了重要的先锋作用。爱国、进步、民主、科学的精神和勤奋、严谨、求实、创新的学风在这里生生不息、代代相传。
         </p>
         <div class="flex">
@@ -51,10 +63,12 @@
             <span class="note">图片来源：作者拍摄</span>
         </div>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 2 / 16</span>
+    </div>
 
     <div class="container">
-        <h3>北大校园</h3>
+        <h2>北大校园</h2>
         <span class="note">（感谢ZZQ友情出演）</span>
         <div class="flex" style="margin: 5px 0px;">
             <div class="card" id="card1">
@@ -92,7 +106,9 @@
         </div>
         <span class="note">图片来源：作者拍摄</span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 3 / 16</span>
+    </div>
 
     <div class="container">
         <div class="flex">
@@ -143,7 +159,9 @@
             </div>
         </div>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 4 / 16</span>
+    </div>
 
     <div class="container">
         <h2>普通高考</h2>
@@ -152,12 +170,14 @@
         <span class="note">Reference: [1] 掌上高考<a
                 href="https://www.gaokao.cn/school/31/provinceline">www.gaokao.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 5 / 16</span>
+    </div>
 
     <div class="container">
         <h2>强基计划</h2>
         <h3>招生对象</h3>
-        <p>有志于服务国家重大战略需求且综合素质优秀或基础学科拔尖的学生。</p>
+        <p class="para">有志于服务国家重大战略需求且综合素质优秀或基础学科拔尖的学生。</p>
         <h3>培养方式</h3>
         <p class="para">
             对强基计划学生建立<strong>动态进出机制</strong>，对符合培养要求的强基计划学生实行<strong>本研衔接培养</strong>。进入研究生阶段后，学生主要在强基计划所在<strong>基础学科专业</strong>进行培养，也可根据培养方案在<strong>高端芯片与软件、智能科技、新材料、先进制造和国家安全</strong>等关键领域以及国家人才紧缺的<strong>人文社会科学领域</strong>进行学科交叉培养。通过强基计划录取的学生入校后原则上<strong>不得转专业</strong>。
@@ -165,86 +185,115 @@
         <span class="note">Reference: [1] 招生简章<a
                 href="https://bkzs.pku.edu.cn/tzgg/4dc8487f304e476786627574e8744c27.htm">bkzs.pku.edu.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 6 / 16</span>
+    </div>
 
     <div class="container">
-        <div class="flex">
-            <table cellspacing="0" cellpadding="10px" width="100%" style>
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>
-                                <p>专业组</p>
-                            </strong>
-                        </td>
-                        <td colspan="9">
-                            <p>Ⅰ组</p>
-                        </td>
-                        <td colspan="4">
-                            <p>Ⅱ组</p>
-                        </td>
-                        <td>
-                            <p>医学组</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>
-                                <p>招生专业</p>
-                            </strong>
-                        </td>
-                        <td>
-                            <p>数学类</p>
-                        </td>
-                        <td>
-                            <p>物理学类</p>
-                        </td>
-                        <td>
-                            <p>化学类</p>
-                        </td>
-                        <td>
-                            <p>力学类</p>
-                        </td>
-                        <td>
-                            <p>生物科学类</p>
-                        </td>
-                        <td>
-                            <p>历史学类</p>
-                        </td>
-                        <td>
-                            <p>考古学</p>
-                        </td>
-                        <td>
-                            <p>哲学类</p>
-                        </td>
-                        <td>
-                            <p>中国语言文学类</p>
-                        </td>
-                        <td>
-                            <p>历史学类</p>
-                        </td>
-                        <td>
-                            <p>考古学</p>
-                        </td>
-                        <td>
-                            <p>哲学类</p>
-                        </td>
-                        <td>
-                            <p>中国语言文学类</p>
-                        </td>
-                        <td>
-                            <p>基础医学</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p>考生<strong>仅可选择一个专业组</strong>进行报考，各专业组单列计划，单独排队入围及录取。</p>
-        <p>Ⅰ组中<strong>历史学类、考古学、哲学类、中国语言文学类（古文字学方向）专业</strong>只录取有志愿考生。</p>
+        <table cellspacing="0" cellpadding="10px" width="90%">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>
+                            <p>专业组</p>
+                        </strong>
+                    </td>
+                    <td>
+                        <strong>
+                            <p>招生专业</p>
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="9">
+                        <p>Ⅰ组</p>
+                    </td>
+                    <td>
+                        <p>数学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>物理学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>化学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>力学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>生物科学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>历史学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>考古学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>哲学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>中国语言文学类（古文字学方向）</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <p>Ⅱ组</p>
+                    </td>
+                    <td>
+                        <p>历史学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>考古学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>哲学类</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>中国语言文学类（古文字学方向）</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>医学组</p>
+                    </td>
+                    <td>
+                        <p>基础医学</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="para">考生<strong>仅可选择一个专业组</strong>进行报考，各专业组单列计划，单独排队入围及录取。</p>
+        <p class="para">Ⅰ组中<strong>历史学类、考古学、哲学类、中国语言文学类（古文字学方向）专业</strong>只录取有志愿考生。</p>
         <span class="note">Reference: [1] 招生简章<a
                 href="https://bkzs.pku.edu.cn/tzgg/4dc8487f304e476786627574e8744c27.htm">bkzs.pku.edu.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 7 / 16</span>
+    </div>
 
     <div class="container">
         <h2>选拔程序</h2>
@@ -271,7 +320,9 @@
         <span class="note">Reference:[1] 招生简章<a
                 href="https://bkzs.pku.edu.cn/tzgg/4dc8487f304e476786627574e8744c27.htm">bkzs.pku.edu.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 8 / 16</span>
+    </div>
 
     <div class="container">
         <h3>网传数据·笔试</h3>
@@ -301,7 +352,9 @@
                     href="https://mp.weixin.qq.com/s/y1JMtG7TFjTKUV7JNAlsdg">《清北2025强基校测真题解读（2026参考）》</a></span>
         </div>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 9 / 16</span>
+    </div>
 
     <div class="container">
         <h3>网传数据·面试</h3>
@@ -321,7 +374,9 @@
                     href="https://mp.weixin.qq.com/s/hbKp8muFHfyao28Mnrhfew">《强基计划2025年真题汇总》</a></span>
         </div>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 10 / 16</span>
+    </div>
 
     <div class="container">
         <h3>网传数据·体测</h3>
@@ -341,7 +396,9 @@
                     href="https://bkzs.pku.edu.cn/tzgg/4dc8487f304e476786627574e8744c27.htm">bkzs.pku.edu.cn</a></span>
         </div>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 11 / 16</span>
+    </div>
 
     <div class="container">
         <h2>竞赛报送</h2>
@@ -354,7 +411,9 @@
         <span class="note">Reference: [1] 招生简章<a
                 href="https://bkzs.pku.edu.cn/tzgg/7cb048dd07d6453b903a3739b28eee14.htm">bkzs.pku.edu.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 12 / 16</span>
+    </div>
 
     <div class="container">
         <h2>数学英才班</h2>
@@ -370,7 +429,9 @@
         <span class="note">Reference: [1] 招生简章<a
                 href="https://bkzs.pku.edu.cn/tzgg/c113bfd040034d8e9c6af1030c01ab4b.htm">bkzs.pku.edu.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 13 / 16</span>
+    </div>
 
     <div class="container">
         <h2>物理卓越计划</h2>
@@ -386,7 +447,9 @@
         <span class="note">Reference: [1] 招生简章<a
                 href="https://bkzs.pku.edu.cn/tzgg/d0321bd523f440bdb15bdf9bca6eb3e3.htm">bkzs.pku.edu.cn</a></span>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 14 / 16</span>
+    </div>
 
     <div class="container">
         <h3>筑梦计划</h3>
@@ -398,11 +461,16 @@
         <h3>双学籍飞行员</h3>
         <p>空军、海军招飞要求</p>
     </div>
-    <div class='divide'></div>
+    <div class='divide'>
+        <span class="pagefooter">Page 15 / 16</span>
+    </div>
 
     <div class="container">
         <h2>That's all</h2>
         <p>Thank you for your listening!</p>
+    </div>
+    <div class='divide'>
+        <span class="pagefooter">Page 16 / 16</span>
     </div>
 </body>
 
