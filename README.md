@@ -10,6 +10,8 @@
 
 [2048](https://ryder-fan.github.io/2048/)
 
+[Bank-Robber](https://ryder-fan.github.io/bank-robber/)
+
 ## Tools
 
 [历法转换器](https://ryder-fan.github.io/calendar/)
