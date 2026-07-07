@@ -1,20 +1,21 @@
 # Ryder-Fan
+https://ryder-fan.pages.dev/
 
 ## Projects
 
-[九班传奇](https://ryder-fan.github.io/class09/)
+[九班传奇](https://ryder-fan.pages.dev/class09/)
 
 ## Games
 
-[Joker-Chess](https://ryder-fan.github.io/joker-chess/)
+[Joker-Chess](https://ryder-fan.pages.dev/joker-chess/)
 
-[2048](https://ryder-fan.github.io/2048/)
+[2048](https://ryder-fan.pages.dev/2048/)
 
-[Bank-Robber](https://ryder-fan.github.io/bank-robber/)
+[Bank-Robber](https://ryder-fan.pages.dev/bank-robber/)
 
 ## Tools
 
-[历法转换器](https://ryder-fan.github.io/calendar/)
+[历法转换器](https://ryder-fan.pages.dev/calendar/)
 
 ## About
 
