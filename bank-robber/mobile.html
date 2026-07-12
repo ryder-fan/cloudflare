@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bank Robber</title>
-    <link rel="stylesheet" href="data/css/index.min.css">
+    <link rel="stylesheet" href="data/css/mobile.min.css">
     <link rel="stylesheet" href="../lib/sweetalert2/sweetalert2.min.css">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="../share/js/global.min.js"></script>
@@ -16,14 +16,14 @@
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
     <script>
-        if (window.innerWidth < 768 || window.innerHeight > window.innerWidth)
-            window.location.href = 'mobile.html';
+        if (window.innerWidth >= 768 && window.innerHeight <= window.innerWidth)
+            window.location.href = 'index.html';
     </script>
 
-    <div class="player" id="Player" style="left:3%; bottom: 5%">
+    <div class="player" id="Player" style="left:69%; top: 28%">
         <h6>Player</h6>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="30px" height="30px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -33,10 +33,10 @@
         </div>
     </div>
 
-    <div class="player" id="Com1" style="left:3%; top: 42.5%">
+    <div class="player" id="Com1" style="left:1%; top: 18%">
         <h6>Com1</h6>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="30px" height="30px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -46,10 +46,10 @@
         </div>
     </div>
 
-    <div class="player" id="Com2" style="left:3%; top: 5%">
+    <div class="player" id="Com2" style="left:35%; top: 18%">
         <h6>Com2</h6>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="30px" height="30px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -59,10 +59,10 @@
         </div>
     </div>
 
-    <div class="player" id="Com3" style="left:23%; top: 5%">
+    <div class="player" id="Com3" style="left:69%; top: 18%">
         <h6>Com3</h6>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="30px" height="30px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -72,10 +72,10 @@
         </div>
     </div>
 
-    <div class="player" id="Com4" style="left:43%; top: 5%">
+    <div class="player" id="Com4" style="left:1%; top: 28%">
         <h6>Com4</h6>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="30px" height="30px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -85,10 +85,10 @@
         </div>
     </div>
 
-    <div class="player" id="Com5" style="left:63%; top: 5%">
+    <div class="player" id="Com5" style="left:35%; top: 28%">
         <h6>Com5</h6>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="30px" height="30px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -99,15 +99,21 @@
     </div>
 
     <div class="info">
-        <h5>Round <span id="round">0</span> / 21</h5>
-        <h5>Stage <span id="stage">0</span> / 3</h5>
-        <p>Current parameters: </p>
-        <ul>
-            <li>攻: <span id="attack">0000</span></li>
-            <li>守: <span id="defence">000</span></li>
-            <li>偷: <span id="stolen">0.00</span></li>
-        </ul>
-        <h5 style="color: red; font-style: italic;">Goal: 25000!</h5>
+        <div>
+            <h5>Round <span id="round">0</span> / 21</h5>
+            <h5>Stage <span id="stage">0</span> / 3</h5>
+        </div>
+        <div>
+            <ul>
+                <li>攻: <span id="attack">0000</span></li>
+                <li>守: <span id="defence">000</span></li>
+                <li>偷: <span id="stolen">0.00</span></li>
+            </ul>
+        </div>
+        <div>
+            <h5 style="color: red; font-style: italic;">Goal:</h5>
+            <h5 style="color: red; font-style: italic;">25000!</h5>
+        </div>
     </div>
 
     <div class="contorl">
@@ -140,8 +146,9 @@
     </div>
 
     <div id="footer">
-        <a href="rule.html">Rules</a>
         <a href="../index.html">About</a>
+        <br>
+        <a href="rule.html">Rules</a>
     </div>
 </body>
 
