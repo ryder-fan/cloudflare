@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Robber</title>
+    <link rel="stylesheet" href="data/css/index.min.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="../share/js/global.min.js"></script>
+</head>
+
+<body>
+    <div style="position: relative; left: 10%; width: 80%; text-align: center;">
+        <h1>守营 游戏规则 </h1>
+        <h2>Bank-Robber Game Rules</h2>
+        <p>每局游戏共21轮，分3个阶段。每位玩家初始拥有1000资金，目标为25000资金。</p>
+        <p>每轮玩家可选择 攻/守/偷 三者之一，选择不公开。</p>
+        <p>攻: 直接获得一定量资金</p>
+        <p>守：对你使用的偷无效，且每有一个人偷你，你获得一定量资金</p>
+        <p>偷：选定一名玩家，如果他没有守，获得他一定比例的资金(基于他上一轮结算后的资金)，同时他扣除相应的资金</p>
+        <p>不同阶段，攻、守、偷的收益如下表</p>
+        <table style="position: relative; left: 30%; width: 40%;">
+            <tr>
+                <th>阶段</th>
+                <th>轮次</th>
+                <th>攻</th>
+                <th>守</th>
+                <th>偷</th>
+            </tr>
+            <tr>
+                <td>第一阶段</td>
+                <td>1~7轮</td>
+                <td>1000</td>
+                <td>500</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>第二阶段</td>
+                <td>8~14轮</td>
+                <td>2000</td>
+                <td>1000</td>
+                <td>33%</td>
+            </tr>
+            <tr>
+                <td>第三阶段</td>
+                <td>15~21轮</td>
+                <td>3000</td>
+                <td>1500</td>
+                <td>50%</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
