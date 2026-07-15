@@ -17,7 +17,9 @@
 <body>
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
-    <script>document.addEventListener('DOMContentLoaded', Main.game.bind(Main))</script>
+    <script>document.addEventListener('DOMContentLoaded', () =>
+            Swal.fire('Error', 'Uncaught ReferenceError: jobs is not defined', 'error')
+        )</script>
 
     <div class="player" id="Player" style="left:3%; bottom:5%">
         <h6>Player-<span id="job">时停者</span></h6>
