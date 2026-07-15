@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <title>Bank Robber</title>
     <link rel="stylesheet" href="data/css/game.min.css">
+    <link rel="stylesheet" href="data/css/custom.min.css">
     <link rel="stylesheet" href="../lib/sweetalert2/sweetalert2.min.css">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <script src="../share/js/global.min.js"></script>
     <script src="../lib/sweetalert2/sweetalert2.min.js"></script>
     <script src="data/js/utils.min.js"></script>
     <script src="data/js/adapt.min.js"></script>
@@ -17,7 +17,67 @@
 <body>
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
-    <script>document.addEventListener('DOMContentLoaded', Main.game.bind(Main))</script>
+    <script>
+        document.oncontextmenu = () => !1, document.onselectstart = () => !1, document.ondragstart = () => !1;
+    </script>
+
+    <div class="hover">
+        <form style="width: 90%" action="">
+            <fieldset>
+                <legend>
+                    <p>自定义参数(点击修改)</p>
+                </legend>
+                <table width="100%">
+                    <td>
+                        <label for="playNum">游戏人数</label>
+                        <select id="playNum">
+                            <option type="number" value="3">3</option>
+                            <option type="number" value="4">4</option>
+                            <option type="number" value="5">5</option>
+                            <option type="number" value="6" selected>6</option>
+                        </select>
+                        <label>人</label>
+                    </td>
+                    <td>
+                        <label for="start">初始资金</label>
+                        <input type="number" id="start" step="100" value="1000">
+                    </td>
+                    <td>
+                        <label for="goal">目标资金</label>
+                        <input type="number" id="goal" step="100" value="25000">
+                    </td>
+                </table>
+                <table width="100%">
+                    <tr>
+                        <th></th>
+                        <th>阶段一</th>
+                        <th>阶段二</th>
+                        <th>阶段三</th>
+                    </tr>
+                    <tr>
+                        <th>攻</th>
+                        <td><input type="number" id="a1" step="100" min="100" value="1000"></td>
+                        <td><input type="number" id="a2" step="100" min="100" value="2000"></td>
+                        <td><input type="number" id="a3" step="100" min="100" value="3000"></td>
+                    </tr>
+                    <tr>
+                        <th>守</th>
+                        <td><input type="number" id="d1" step="100" min="100" value="500"></td>
+                        <td><input type="number" id="d2" step="100" min="100" value="1000"></td>
+                        <td><input type="number" id="d3" step="100" min="100" value="1500"></td>
+                    </tr>
+                    <tr>
+                        <th>偷</th>
+                        <td><input type="number" id="s1" step="0.01" min="0" max="1" value="0.25"></td>
+                        <td><input type="number" id="s2" step="0.01" min="0" max="1" value="0.33"></td>
+                        <td><input type="number" id="s3" step="0.01" min="0" max="1" value="0.50"></td>
+                    </tr>
+                </table>
+                <p style="font-style: italic; text-align: center">资金精确到100，比例精确到0.01</p>
+            </fieldset>
+        </form>
+        <button onclick="setParams()">开始游戏</button>
+    </div>
 
     <div class="player" id="Player" style="left:3%; bottom:5%">
         <h6>Player</h6>
@@ -111,7 +171,7 @@
         </div>
         <div>
             <h5 style="color:red; font-style:italic;">Goal:</h5>
-            <h5 style="color:red; font-style:italic;">25000!</h5>
+            <h5 style="color:red; font-style:italic;" id="goal"></h5>
         </div>
     </div>
 
