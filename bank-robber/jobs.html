@@ -12,14 +12,15 @@
     <script src="data/js/utils.min.js"></script>
     <script src="data/js/adapt.min.js"></script>
     <script src="data/js/game.min.js"></script>
+    <script src="data/js/jobs.min.js"></script>
 </head>
 
 <body>
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
-    <script>document.addEventListener('DOMContentLoaded', () =>
-            Swal.fire('Error', 'Uncaught ReferenceError: jobs is not defined', 'error')
-        )</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => Swal.fire('Error', 'Uncaught ReferenceError: jobs is not defined', 'error'))
+    </script>
 
     <div class="player" id="Player" style="left:3%; bottom:5%">
         <h6>Player-<span id="job">时停者</span></h6>
@@ -35,7 +36,7 @@
     </div>
 
     <div class="player" id="Com1" style="left:3%; top:42.5%">
-        <h6>Com1</h6>
+        <h6>Com1-<span id="job">时停者</span></h6>
         <div class="label">
             <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
             <p id="money">1000</p>
@@ -48,7 +49,7 @@
     </div>
 
     <div class="player" id="Com2" style="left:3%; top:5%">
-        <h6>Com2</h6>
+        <h6>Com2-<span id="job">时停者</span></h6>
         <div class="label">
             <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
             <p id="money">1000</p>
@@ -61,7 +62,7 @@
     </div>
 
     <div class="player" id="Com3" style="left:23%; top:5%">
-        <h6>Com3</h6>
+        <h6>Com3-<span id="job">时停者</span></h6>
         <div class="label">
             <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
             <p id="money">1000</p>
@@ -74,7 +75,7 @@
     </div>
 
     <div class="player" id="Com4" style="left:43%; top:5%">
-        <h6>Com4</h6>
+        <h6>Com4-<span id="job">时停者</span></h6>
         <div class="label">
             <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
             <p id="money">1000</p>
@@ -87,7 +88,7 @@
     </div>
 
     <div class="player" id="Com5" style="left:63%; top:5%">
-        <h6>Com5</h6>
+        <h6>Com5-<span id="job">时停者</span></h6>
         <div class="label">
             <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
             <p id="money">1000</p>
