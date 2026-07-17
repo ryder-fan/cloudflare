@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Bank Robber</title>
     <link rel="stylesheet" href="data/css/game.min.css">
+    <link rel="stylesheet" href="data/css/jobs.min.css">
     <link rel="stylesheet" href="../lib/sweetalert2/sweetalert2.min.css">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script src="../share/js/global.min.js"></script>
@@ -15,7 +16,7 @@
     <script src="data/js/jobs.min.js"></script>
 </head>
 
-<body>
+<body class="jobs">
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
     <script>
@@ -23,9 +24,12 @@
     </script>
 
     <div class="player" id="Player" style="left:3%; bottom:5%">
-        <h6>Player-<span id="job">时停者</span></h6>
         <div class="label">
-            <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
+            <h6 id="job">时停者</h6>
+            <h6>Player</h6>
+        </div>
+        <div class="label">
+            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -36,9 +40,12 @@
     </div>
 
     <div class="player" id="Com1" style="left:3%; top:42.5%">
-        <h6>Com1-<span id="job">时停者</span></h6>
         <div class="label">
-            <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
+            <h6 id="job">时停者</h6>
+            <h6>Com1</h6>
+        </div>
+        <div class="label">
+            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -49,9 +56,12 @@
     </div>
 
     <div class="player" id="Com2" style="left:3%; top:5%">
-        <h6>Com2-<span id="job">时停者</span></h6>
         <div class="label">
-            <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
+            <h6 id="job">时停者</h6>
+            <h6>Com2</h6>
+        </div>
+        <div class="label">
+            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -62,9 +72,12 @@
     </div>
 
     <div class="player" id="Com3" style="left:23%; top:5%">
-        <h6>Com3-<span id="job">时停者</span></h6>
         <div class="label">
-            <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
+            <h6 id="job">时停者</h6>
+            <h6>Com3</h6>
+        </div>
+        <div class="label">
+            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -75,9 +88,12 @@
     </div>
 
     <div class="player" id="Com4" style="left:43%; top:5%">
-        <h6>Com4-<span id="job">时停者</span></h6>
         <div class="label">
-            <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
+            <h6 id="job">时停者</h6>
+            <h6>Com4</h6>
+        </div>
+        <div class="label">
+            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -88,9 +104,12 @@
     </div>
 
     <div class="player" id="Com5" style="left:63%; top:5%">
-        <h6>Com5-<span id="job">时停者</span></h6>
         <div class="label">
-            <img src="data/img/money.png" width="25px" height="25px" loading="lazy">
+            <h6 id="job">时停者</h6>
+            <h6>Com5</h6>
+        </div>
+        <div class="label">
+            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -123,16 +142,17 @@
             <button id="attBtn">攻</button>
             <button id="defBtn">守</button>
             <button id="stoBtn">偷</button>
+            <button id="skiBtn">技能</button>
         </div>
         <div id="targetLabel">
-            <div style="height:45%">
-                <button id="c1">Com 1</button>
-                <button id="c2">Com 2</button>
-                <button id="c3">Com 3</button>
+            <div class="targetBtns">
+                <button id="c1">Com1</button>
+                <button id="c2">Com2</button>
+                <button id="c3">Com3</button>
             </div>
-            <div style="height:45%">
-                <button id="c4">Com 4</button>
-                <button id="c5">Com 5</button>
+            <div class="targetBtns">
+                <button id="c4">Com4</button>
+                <button id="c5">Com5</button>
                 <button id="cancel">Cancel</button>
             </div>
         </div>
