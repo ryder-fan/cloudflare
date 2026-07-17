@@ -19,13 +19,11 @@
 <body class="jobs">
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => Swal.fire('Error', 'Uncaught ReferenceError: jobs is not defined', 'error'))
-    </script>
+    <script>document.addEventListener('DOMContentLoaded', JobMain.game.bind(JobMain))</script>
 
     <div class="player" id="Player" style="left:3%; bottom:5%">
         <div class="label">
-            <h6 id="job">时停者</h6>
+            <h6 id="job"></h6>
             <h6>Player</h6>
         </div>
         <div class="label">
@@ -41,7 +39,7 @@
 
     <div class="player" id="Com1" style="left:3%; top:42.5%">
         <div class="label">
-            <h6 id="job">时停者</h6>
+            <h6 id="job"></h6>
             <h6>Com1</h6>
         </div>
         <div class="label">
@@ -57,7 +55,7 @@
 
     <div class="player" id="Com2" style="left:3%; top:5%">
         <div class="label">
-            <h6 id="job">时停者</h6>
+            <h6 id="job"></h6>
             <h6>Com2</h6>
         </div>
         <div class="label">
@@ -73,7 +71,7 @@
 
     <div class="player" id="Com3" style="left:23%; top:5%">
         <div class="label">
-            <h6 id="job">时停者</h6>
+            <h6 id="job"></h6>
             <h6>Com3</h6>
         </div>
         <div class="label">
@@ -89,7 +87,7 @@
 
     <div class="player" id="Com4" style="left:43%; top:5%">
         <div class="label">
-            <h6 id="job">时停者</h6>
+            <h6 id="job"></h6>
             <h6>Com4</h6>
         </div>
         <div class="label">
@@ -105,7 +103,7 @@
 
     <div class="player" id="Com5" style="left:63%; top:5%">
         <div class="label">
-            <h6 id="job">时停者</h6>
+            <h6 id="job"></h6>
             <h6>Com5</h6>
         </div>
         <div class="label">
@@ -133,7 +131,7 @@
         </div>
         <div>
             <h5 style="color:red; font-style:italic;">Goal:</h5>
-            <h5 style="color:red; font-style:italic;">25000!</h5>
+            <h5 style="color:red; font-style:italic;" id="goal">25000</h5>
         </div>
     </div>
 
