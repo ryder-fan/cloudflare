@@ -12,14 +12,13 @@
     <script src="../lib/sweetalert2/sweetalert2.min.js"></script>
     <script src="data/js/utils.min.js"></script>
     <script src="data/js/adapt.min.js"></script>
-    <script src="data/js/game.min.js"></script>
     <script src="data/js/jobs.min.js"></script>
 </head>
 
 <body class="jobs">
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
-    <script>document.addEventListener('DOMContentLoaded', JobMain.game.bind(JobMain))</script>
+    <script>document.addEventListener('DOMContentLoaded', Main.game.bind(Main))</script>
 
     <div class="player" id="Player" style="left:3%; bottom:5%">
         <div class="label">
@@ -140,17 +139,17 @@
             <button id="attBtn">攻</button>
             <button id="defBtn">守</button>
             <button id="stoBtn">偷</button>
-            <button id="skiBtn">技能</button>
         </div>
         <div id="targetLabel">
-            <div class="targetBtns">
+            <div style="height:45%;">
                 <button id="c1">Com1</button>
                 <button id="c2">Com2</button>
                 <button id="c3">Com3</button>
             </div>
-            <div class="targetBtns">
+            <div style="height:45%">
                 <button id="c4">Com4</button>
                 <button id="c5">Com5</button>
+                <button id="pl" disabled>Player</button>
                 <button id="cancel">Cancel</button>
             </div>
         </div>
