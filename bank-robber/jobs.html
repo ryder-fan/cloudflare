@@ -6,19 +6,19 @@
     <title>Bank Robber</title>
     <link rel="stylesheet" href="data/css/game.min.css">
     <link rel="stylesheet" href="data/css/jobs.min.css">
-    <link rel="stylesheet" href="../lib/sweetalert2/sweetalert2.min.css">
+    <link rel="preload" as="image" href="data/img/money.png">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <script src="../share/js/global.min.js"></script>
-    <script src="../lib/sweetalert2/sweetalert2.min.js"></script>
-    <script src="data/js/utils.min.js"></script>
-    <script src="data/js/adapt.min.js"></script>
-    <script src="data/js/jobs.min.js"></script>
+    <script src="data/js/utils.min.js" defer></script>
+    <script src="data/js/adapt.min.js" defer></script>
+    <script src="data/js/jobs.min.js" defer></script>
+    <script src="../share/js/global.min.js" defer></script>
+    <script src="../lib/sweetalert2/sweetalert2.min.js" defer></script>
 </head>
 
 <body class="jobs">
     <noscript>Error: Please enable JavaScript to view this page.</noscript>
 
-    <script>document.addEventListener('DOMContentLoaded', Main.game.bind(Main))</script>
+    <script>document.addEventListener('DOMContentLoaded', () => Main.game())</script>
 
     <div class="player" id="Player" style="left:3%; bottom:2%">
         <div class="label">
@@ -26,7 +26,7 @@
             <h6>Player</h6>
         </div>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="20px" height="20px" loading="eager">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -44,7 +44,7 @@
             <h6>Com1</h6>
         </div>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="20px" height="20px" loading="eager">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -62,7 +62,7 @@
             <h6>Com2</h6>
         </div>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="20px" height="20px" loading="eager">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -80,7 +80,7 @@
             <h6>Com3</h6>
         </div>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="20px" height="20px" loading="eager">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -98,7 +98,7 @@
             <h6>Com4</h6>
         </div>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="20px" height="20px" loading="eager">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
@@ -116,7 +116,7 @@
             <h6>Com5</h6>
         </div>
         <div class="label">
-            <img src="data/img/money.png" width="20px" height="20px" loading="lazy">
+            <img src="data/img/money.png" width="20px" height="20px" loading="eager">
             <p id="money">1000</p>
             <span class="add" id="variation">+0000</span>
         </div>
