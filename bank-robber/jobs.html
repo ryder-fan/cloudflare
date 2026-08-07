@@ -4,14 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Bank Robber</title>
+    
     <link rel="stylesheet" href="data/css/game.min.css">
     <link rel="stylesheet" href="data/css/jobs.min.css">
     <link rel="preload" as="image" href="data/img/money.webp">
+
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <script src="data/js/utils.min.js" defer></script>
     <script src="data/js/jobs.min.js" defer></script>
     <script src="../share/js/global.min.js" defer></script>
     <script src="../lib/sweetalert2/sweetalert2.min.js" defer></script>
+
+    <style>
+        @media only screen and (orientation: landscape) {
+            #Player {
+                left: 3%;
+                bottom: 2%;
+            }
+
+            #Com1 {
+                left: 3%;
+                top: 42.5%;
+            }
+
+            #Com2 {
+                left: 3%;
+                top: 2%;
+            }
+
+            #Com3 {
+                left: 23%;
+                top: 2%;
+            }
+
+            #Com4 {
+                left: 43%;
+                top: 2%;
+            }
+
+            #Com5 {
+                left: 63%;
+                top: 2%;
+            }
+        }
+
+        @media only screen and (orientation: portrait) {
+            #Player {
+                left: 69%;
+                top: 25%;
+            }
+
+            #Com1 {
+                left: 1%;
+                top: 13%;
+            }
+
+            #Com2 {
+                left: 35%;
+                top: 13%;
+            }
+
+            #Com3 {
+                left: 69%;
+                top: 13%;
+            }
+
+            #Com4 {
+                left: 1%;
+                top: 25%;
+            }
+
+            #Com5 {
+                left: 35%;
+                top: 25%;
+            }
+        }
+    </style>
 </head>
 
 <body class="jobs">
